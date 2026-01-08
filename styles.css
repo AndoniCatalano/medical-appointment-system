@@ -1,0 +1,122 @@
+body {
+    background: #f3f6ff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 2em;
+    color: #2c2c2c;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1.5em;
+    color: #1f2d55;
+}
+
+/* Form */
+
+#appointmentForm {
+    background: white;
+    max-width: 600px;
+    margin: 0 auto 2em auto;
+    padding: 1.5em;
+    border-radius: 1em;
+    box-shadow: 0 4px 14px rgba(0,0,0,.12);
+    font-size: 1.1em;
+}
+
+#appointmentForm label {
+    display: block;
+    margin-top: .8em;
+    font-weight: bold;
+}
+
+#appointmentForm input[type="text"],
+#appointmentForm input[type="datetime-local"],
+#appointmentForm input[type="tel"] {
+    width: 100%;
+    padding: .5em .7em;
+    margin-top: .3em;
+    border: 1px solid #9da9c5;
+    border-radius: .5em;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+#appointmentForm input[type="submit"] {
+    margin-top: 1.2em;
+    width: 100%;
+    padding: .7em;
+    border: none;
+    border-radius: .6em;
+    background: #4763ff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+#appointmentForm input[type="submit"]:hover {
+    background: #2f4bdf;
+}
+
+/* Appointment list */
+
+#appointmentList {
+    list-style: none;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#appointmentList li {
+    background: white;
+    padding: 1em 1.2em;
+    margin-bottom: 1em;
+    border-radius: 1em;
+    box-shadow: 0 4px 12px rgba(0,0,0,.1);
+
+    display: flex;
+    align-items: center;
+    gap: .6em;
+}
+
+#appointmentList li span {
+    flex-grow: 1;
+    font-size: 1.05em;
+}
+
+#appointmentList li button {
+    border: none;
+    background: #ff6b6b;
+    color: white;
+    padding: .4em .9em;
+    border-radius: .8em;
+    cursor: pointer;
+    font-weight: bold;
+    transition: .2s;
+}
+
+#appointmentList li button:hover {
+    background: #ff3b3b;
+}
+
+/* Phone input extra styles */
+
+#phone {
+    width: 100%;
+    padding: .5em .7em;
+    margin-top: .3em;
+    border: 1px solid #9da9c5;  
+    border-radius: .5em;    
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: .2s ease;
+}
+
+#phone::placeholder {
+    color: #9aa3b1;
+}
+
+#phone:focus {
+    outline: none;
+    b

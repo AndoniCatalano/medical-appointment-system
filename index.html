@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Medical Appointment</title>
+</head>
+<body>
+
+    <h1>Schedule a Medical Appointment</h1>
+
+    <form id="appointmentForm">
+        <label for="firstName">First name</label>
+        <input type="text" name="firstName" id="firstName" required autocomplete="off"><br>
+        
+        <label for="lastName">Last name</label>
+        <input type="text" name="lastName" id="lastName" required autocomplete="off"><br>
+        
+        <label for="phone">Phone</label>
+        <input type="tel" name="phone" id="phone" autocomplete="off"><br>
+
+        <label for="appointmentDate">Date and time</label>
+        <input type="datetime-local" name="appointmentDate" id="appointmentDate" required autocomplete="off"><br>
+        
+        <input type="submit" value="Schedule">
+    </form>
+
+    <ul id="appointmentList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
